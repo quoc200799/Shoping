@@ -1,0 +1,202 @@
+body {
+    margin-top: 70px;
+}
+
+html {
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+button {
+    outline: 0;
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #10221b;
+}
+
+/* header */
+.header {
+    font-size: 62.5%;
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.3rem 9%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    margin-right: auto;
+    font-size: 1.7rem;
+    color: #10221b;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header .logo img {
+    width: 4.375rem;
+}
+
+.header .logo i {
+    color: #219150;
+}
+
+.header .navbar a {
+    position: relative;
+    padding: 0 0.625rem;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    color: #10221b;
+    text-decoration: none;
+}
+
+.header .navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 0.188rem;
+    width: 0;
+    left: 0;
+    bottom: -0.625rem;
+    transition: 0.3s;
+}
+
+.header .navbar a:hover:after {
+    width: 100%;
+}
+
+.header .navbar a:hover {
+    color: #219150;
+}
+
+.header .navbar span {
+    font-size: 1.3rem;
+}
+
+.header .navbar .iconbag {
+    font-size: 1.5rem;
+}
+
+.header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: #10221b;
+    display: none;
+}
+
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+    color: #219150;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+.header-text {
+    color: brown
+}
+
+.table {
+    min-width: 920px;
+    margin-top: 15px;
+}
+
+.table .img-bill {
+    width: 36vw;
+    transform: translateX(34vw);
+}
+
+/* .table tr th {
+    font-size: 20px;
+
+} */
+
+.table thead,
+.table tbody {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.getitembuy {
+    height: 70px
+}
+
+.getitembuy .empty {
+    position: absolute;
+    left: 45vw;
+    color: #606975
+}
+
+.getitembuy .delete-btn {
+    color: #e74c3c;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    animation: 2s;
+}
+
+.getitembuy .delete-btn:hover {
+    background: rgba(255, 44, 44, 0.095);
+}
+
+.getitembuy tr {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dropdown-menu {
+    transform: translate3d(10vw, 11.2rem, 0px) !important;
+
+}
+
+.dropdown .show {
+    width: 100vw;
+
+}
+
+
+.dropdown tr td {
+    vertical-align: middle !important;
+
+}
+
+
+.dropdown tr td:nth-child(1) span {
+    font-weight: 550;
+    font-size: 20px;
+    color: #161d1ab8;
+}
+
+.dropdown tr td img {
+    width: 12vw;
+    height: 100px;
+    object-fit: cover;
+}
